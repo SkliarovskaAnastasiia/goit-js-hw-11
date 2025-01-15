@@ -15,7 +15,7 @@ function createImageCard(image) {
 
   return `<li class="img-list-item js-item">
         <a href="${largeImageURL}" class="gallery-link">
-          <img src="${webformatURL}" alt="${tags}"  />
+          <img class="img" src="${webformatURL}" alt="${tags}" width="360" />
           <div class="info-wrapper">
             <div class="img-info">
               <p class="label">Likes</p>

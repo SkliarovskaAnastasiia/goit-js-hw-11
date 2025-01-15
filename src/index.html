@@ -5,11 +5,28 @@
     <link rel="icon" type="image/svg+xml" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixabay Gallery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="js-search-form">
-      <input class="iput-field" type="text" name="search_request" required />
+    <form class="search-form js-search-form">
+      <input
+        class="iput-field"
+        type="text"
+        name="search_request"
+        placeholder="Search images..."
+        required
+      />
       <button class="search-btn">Search</button>
     </form>
     <ul class="img-list js-img-list"></ul>
