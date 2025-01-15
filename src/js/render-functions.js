@@ -1,4 +1,6 @@
-const galleryEl = document.querySelector('.img-list');
+import SimpleLightbox from 'simplelightbox';
+
+export const galleryEl = document.querySelector('.js-img-list');
 
 function createImageCard(image) {
   const {
@@ -11,9 +13,9 @@ function createImageCard(image) {
     downloads,
   } = image;
 
-  return `<li class="img-list-item">
+  return `<li class="img-list-item js-item">
         <a href="${largeImageURL}" class="gallery-link">
-          <img src="${webformatURL}" alt="${tags}" width="360" height="200" />
+          <img src="${webformatURL}" alt="${tags}"  />
           <div class="info-wrapper">
             <div class="img-info">
               <p class="label">Likes</p>
@@ -39,4 +41,9 @@ function createImageCard(image) {
 export function renderImageCards(images) {
   const galleryTemplate = images.map(image => createImageCard(image)).join('');
   galleryEl.innerHTML = galleryTemplate;
+
+  new SimpleLightbox('.js-img-list a', {
+    captionsData: 'alt',
+    captionDelay: 200,
+  }).refresh();
 }

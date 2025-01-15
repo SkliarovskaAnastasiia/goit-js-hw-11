@@ -11,3 +11,5 @@
 
 /* Sections style */
 @import url('./form.css');
+@import 'izitoast/dist/css/iziToast.min.css';
+@import 'simplelightbox/dist/simple-lightbox.min.css';
