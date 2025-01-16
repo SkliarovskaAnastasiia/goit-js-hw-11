@@ -7,6 +7,7 @@ export function fetchImages(searchedQuery) {
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,
+    per_page: 102,
   });
 
   return fetch(`https://pixabay.com/api/?${searchParams}`).then(response => {
