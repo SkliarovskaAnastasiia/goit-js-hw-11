@@ -3,7 +3,7 @@ import { galleryEl, renderImageCards } from '/js/render-functions.js';
 import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 import './js/scroll-to-up';
-import errorIcon from '/src/img/error.svg';
+import errorIcon from './img/error.svg';
 
 const loaderEl = document.querySelector('.js-loader');
 
